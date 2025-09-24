@@ -15,7 +15,7 @@ RUN bun install
 COPY . .
 
 # Expose the app port (default for Hono is 3000)
-EXPOSE 3000
+EXPOSE 4444
 
 # Set environment variables for development
 ENV NODE_ENV=development

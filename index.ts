@@ -27,4 +27,7 @@ app.get('/', (c) => { return c.text('Hello Hono!') })
 
 app.on(["POST", "GET"], "/api/auth/*", (c) => auth.handler(c.req.raw));
 
-export default app
+export default {
+    fetch: app.fetch,
+    port: 4444
+}
